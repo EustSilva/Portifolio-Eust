@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="../Portifolio-Eust/assets/js/color-modes.js"></script>
+    <script src="https://kit.fontawesome.com/f3ac974482.js" crossorigin="anonymous"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
 <link href="../Portifolio-Eust/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../Portifolio-Eust/assets/dist/grid.css" rel="stylesheet">
+<link href="../Portifolio-Eust/assets/dist/css/style.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -90,6 +93,12 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .themed-grid-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
+}
 
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
@@ -155,38 +164,75 @@
     
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Fixed navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Habilidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Contato</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
 
 <main class="container">
-  <div class="bg-body-tertiary p-5 rounded">
-    <h1>Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
-    <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+  <div class="p-5 rounded">
+
+    <div class="row">
+    <div class="col-4">     
+    <h1>Olá sou o </h1>
+    <h1>Carlos Eust :]</h1>
+    <p class="lead">Sou desenvolvedor de software, mobile, desktop e web.</p>
+    <button type="button" class="btn btn-primary">Curriculo</button>
+    <button type="button" class="btn btn-outline-secondary">Entrar em contato</button>
+    </div>
+    <div class="col-8">
+      <rect width="100%" height="100%" fill="#868e96"></rect>
+      <img src="../Portifolio-Eust/assets/img/perfil.jpg"  class="img-fluid img-perfil" alt="...">
+    </div>
   </div>
 </main>
 <script src="../Portifolio-Eust/assets/dist/js/bootstrap.bundle.min.js"></script>
+<br/><br/>
+<div class="container">
+  <div class="row mb-3 p-5 text-center">
+    <h1>Sobre mim</h1>
+    <br/><br/><br/>
+      <div class="about modal-lg text-center">
+      <p>Desenvolvedor de websites com ferramentas como wordpress, bootstrap, javascript, css, jquery<hr>
+       Desenvolvimento desktop com visual studio em c#, criando os famosos form. </p><hr>
+       Desenvolvimento mobile com Java no android studio.</p>
+      </div>
+  </div>
+  <br/><br/> 
+  <div class="row mb-3 text-center habilidade-div">
+    <h1>Habilidades</h1><br/>
 
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-css3-alt"></i><p href="">CSS3</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-solid fa-font-awesome"></i><p href="">Fontawesome</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-js"></i><p href="">JavaScript</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-php"></i><p href="">PHP</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-python"></i><p href="">Python</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-sharp-duotone fa-solid fa-database"></i><p href="">SQL</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-bootstrap"></i><p href="">Bootstrap</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-wordpress"></i><p href="">Wordpress</p></div>
+    <div class="col-4 themed-grid-col"><i class="fa-brands fa-android"></i></i><p href="">Android Studio</p></div>
+    
+  </div>
+  <br/><br/>
+ 
+  <div class="row mb-3 text-center habilidade-div">
+    <h1>Contato</h1><br/>
+
+    <div class="col-4"><i class="fa-brands fa-linkedin"></i><p href="">Linkedin</p></div>
+    <div class="col-4"><i class="fa-brands fa-github"></i><p href="">GitHub</p></div>
+    <div class="col-4"><i class="fa-solid fa-envelope"></i></i></i><p href="">Email</p></div>
+  </div>
+</div>
     </body>
 </html>
