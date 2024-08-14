@@ -26,6 +26,13 @@ color: #858591;
         font-size: 30px;
     }
     .navbar-collapse h3{ text-align: center;}
+    
+    .bloco-contato:hover{
+        background-color:  #713fef;
+    }
+    .bloco-skills:hover{
+        background-color:  #713fef;
+    }
 
   @media (max-width: 750px) {
     .habilidade-div p {
